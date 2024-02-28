@@ -1,52 +1,196 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.main-container{
-    background: url("./imageVideo/bg-img.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    top: 0;
+.main-container {
+  background: url("./imageVideo/bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  top: 0;
 }
-header{
-    display: flex;
-    padding: 20px;
-    color: rgb(255, 255, 255);
-    align-items: center;
+header {
+  display: flex;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  align-items: center;
+}
+h1 {
+  margin-left: 1.5vw;
+  color: white;
+  z-index: 1;
+  cursor: pointer;
+}
+.nav-list {
+  z-index: 1;
+  display: flex;
+  margin-left: 5.5vw;
+  justify-content: center;
+  align-items: center;
+}
+.nav-items {
+  margin-right: 2.5vw;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px;
+  cursor: pointer;
+}
+.nav-items:hover {
+  background-color: rgba(255, 255, 255, 0.199);
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
 
+.menu img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+  cursor: pointer;
 }
-h1{
-    color:white;
-    z-index: 1;
+.menu-items {
+  margin-top: -63.8vh;
+  display: none;
+}
+.menu-item {
+  padding: 40px;
+  margin-left: 30px;
+  cursor: pointer;
+  margin-bottom: -20px;
+}
+.menu-item a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.523);
+  font-size: 20px;
+  font-weight: 600;
+}
+.menu-item a:hover {
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.sec1 {
+  width: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+}
+.sec2 {
+  width: 50%;
+  background-image: url("imageVideo/menu-itme-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+#item-list {
+  color: white;
+  margin-top: 50px;
+  padding: 40px;
+  margin-left: 30px;
+  cursor: pointer;
+  margin-bottom: -20px;
+}
+#item-list li {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 30px;
+  list-style: none;
+}
+select {
+  width: 10vw;
+  font-size: 17px;
+  outline: none;
+  background: transparent;
+  border: 1px solid;
+  color: white;
+  padding: 5px;
+}
+select > option {
+  color: black;
+  outline: non;
+}
+.menu-nav {
+  display: none;
+}
+h4 {
+  color: white;
+  font-size: 90px;
+  margin: 90px 0px 0px 120px;
+}
+h5 {
+  color: white;
+  font-size: 60px;
+  margin: 30px 0px 0px 200px;
+}
+h4 span {
+  color: rgb(17, 200, 17);
+}
+#spnred {
+  color: rgb(236, 21, 21);
+}
+button {
+  background: rgb(207, 198, 18);
+  margin: 30px 0px 0px 120px;
+  outline: none;
+  padding: 10px 30px 10px 30px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.666);
+  cursor: pointer;
+}
+button:hover {
+  background: rgb(180, 172, 14);
+  color: white;
+  transition: 0.5s ease;
 }
 
-.menu img{
-    width: 30px;
-    height: 30px;
-    filter: brightness(0) invert(1);
-    cursor: pointer;
-    margin-left: 1.5vw;
-}
-.menu-items{
-    margin-top: -11.3vh;
-    display: flex;
+/* ================== Rsposnsive in Phone ================= */
+@media screen and (max-width: 600px) {
+  .menu-nav {
+    display: block;
+    color: white;
+    margin-left: 50px;
+    margin-top: 15vh;
+  }
+  .menu-nav-list {
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .nav-list {
     display: none;
+  }
+  .menu-items {
+    margin-top: -85.4vh;
+  }
+  h1 {
+    margin-left: 5vw;
+  }
+  .sec2 {
+    display: none;
+  }
+  .sec1 {
+    width: 100%;
+  }
+  select {
+    width: 50vw;
+  }
+  #item-list {
+    margin-top: 25px;
+    padding: 20px;
+  }
+  .menu-item {
+    padding: 20px;
+  }
+  h4{
+  margin: 90px 0px 0px 80px;
+  }
+  h5 {
+  margin: 10px 0px 0px 100px;
+  }
+  button {
+    display: none;
+  }
 }
-.sec1{
-    width: 50%;
-    background: rgba(0,0,0,0.5);
-    height: 100vh;
-}
-.sec2{
-    width: 50%;
-    background-image: url("imageVideo/menu-itme-img.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-}
-
-

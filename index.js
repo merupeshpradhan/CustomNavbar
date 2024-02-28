@@ -1,8 +1,7 @@
 function toggle() {
     var menu = document.getElementsByClassName("menu-items")[0];
     var menuLogo = document.getElementById("menu-logo");
-
-    menuLogo.style.transition="ease"
+    menuLogo.style.transition="0.3s ease";
 
 
     if (menu.style.display=="flex") {
